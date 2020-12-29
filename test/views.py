@@ -20,7 +20,7 @@ class khatabook(APIView):
             return Response(common.success_Response(serializer.data))
 #             JsonResponse(common.success_Response(serializer.data))
         else:
-            return Response(common.failure_Response(serializer.data)) 
+            return Response(common.failure_Response(serializer.data))  
         
         
     def post(self, request, format=None):
